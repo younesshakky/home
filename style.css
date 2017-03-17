@@ -38,24 +38,32 @@ h2{
 p{
 	width:700px;
 	max-width: 90%;
-	line-height: 24px;
+	line-height: 26px;
 	font-size: 18px;
 	font-weight: 600;
 	color: #566270;
 }
 
-.button{
-	padding: 12px 22px;
-	color: #566270;
+.button.btn-black{
+	padding: 10px 25px;
+	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	display: inline-block;
-}
-.button.btn-black{
 	background: #566270;
 	color: white;
 	border-radius: 8px;
 	transition: all .3s ease, transform .15s ease;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.button.btn-black.disabled{
+	opacity: .16;
+	cursor: default;
+}
+
+.tw-acc{
+	color: #8CD790;
 }
 
 .button.btn-black:hover{
@@ -67,10 +75,6 @@ p{
 }
 
 .logo{
-/*	position: absolute;
-	top:20px;
-	left:20px;
-	z-index:-1;*/
-	margin-bottom: 30px;
 	height: 100px;
+	margin-bottom: 30px;
 }
