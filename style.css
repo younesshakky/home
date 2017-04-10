@@ -9,15 +9,22 @@
 
 a{text-decoration: none;}
 
-main{
+.container{
 	width: 830px;
 	margin: 0 auto;
-	padding-top: 65px;
-	padding-bottom: 30px;
 	max-width: 90%;
-	perspective: 900px;
+	/*perspective: 900px;*/
 }
 
+main{
+	padding-top: 65px;
+	padding-bottom: 30px;	
+}
+
+.logo{
+	height: 100px;
+	margin-bottom: 30px;
+}
 
 h1{
 	color: #566270;
@@ -45,20 +52,43 @@ p{
 	color: #566270;
 }
 
-.button.btn-black{
-	padding: 10px 25px;
+.button{
+	padding: 12px 27px;
 	font-size: 16px;
-	font-weight: 700;
+	/*font-weight: 700;*/
 	text-transform: uppercase;
-	background: #566270;
-	color: white;
+	background: lightgray;
+	color: #333;
 	border-radius: 8px;
 	transition: all .3s ease, transform .15s ease;
-	display: inline-block;
+	/*display: inline-block;*/
 	margin-right: 8px;
 }
 
-.button.btn-black.disabled{
+.button:active{
+	transform: translateY(2px);	
+}
+
+.button.btn-black{
+	background: #566270;
+	color: white;
+}
+
+.button.btn-black:hover{
+	background: #3b424a;
+}
+
+
+.button.btn-default{
+	background: lightgray;
+	color: #566270;
+}
+
+.button.btn-default:hover{
+	background: #c1c1c1;
+}
+
+.button.disabled{
 	opacity: .16;
 	cursor: default;
 }
@@ -67,15 +97,26 @@ p{
 	color: #8CD790;
 }
 
-.button.btn-black:hover{
-	background: #3b424a;
+
+/* =================== */
+/* Work */
+
+#work{
+	padding
 }
 
-.button.btn-black:active{
-	transform: translateY(2px);	
+.single-project{
+	background: #333;
+	height: 300px;
+	width: 430px;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
-.logo{
-	height: 100px;
-	margin-bottom: 30px;
+.single-project img{
+	height: 100%;
+	/*width: 100%;*/
+	
 }
